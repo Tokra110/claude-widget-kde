@@ -1,0 +1,28 @@
+{
+    "KPlugin": {
+        "Id": "com.github.tokra110.claudewidget",
+        "Name": "Claude Widget",
+        "Description": "Panel widget that shows your Claude Code usage limits, your pace against them, and the cost at API prices",
+        "Icon": "icon",
+        "Authors": [
+            {
+                "Name": "Tokra110",
+                "Email": "9090339+Tokra110@users.noreply.github.com"
+            },
+            {
+                "Name": "p3kj (Claude Meter, the original widget)",
+                "Email": "p3k.jaros@gmail.com"
+            }
+        ],
+        "Category": "Utilities",
+        "Website": "https://github.com/Tokra110/claude-widget-kde",
+        "Version": "1.0.0",
+        "License": "MIT"
+    },
+    "KPackageStructure": "Plasma/Applet",
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "X-Plasma-MainScript": "ui/main.qml",
+    "X-Plasma-NotificationArea": "true",
+    "X-Plasma-NotificationAreaCategory": "ApplicationStatus"
+}

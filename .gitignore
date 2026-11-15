@@ -1,0 +1,11 @@
+*.swp
+*.swo
+*~
+*.bak
+.DS_Store
+.idea/
+.claude/
+*.plasmoid
+/dist/
+__pycache__/
+*.pyc

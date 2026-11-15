@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+                          http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+    <kcfgfile name=""/>
+
+    <group name="General">
+        <entry name="pollInterval" type="Int">
+            <label>Polling interval in seconds</label>
+            <default>300</default>
+        </entry>
+        <entry name="warningThreshold" type="Int">
+            <label>Warning threshold percentage</label>
+            <default>50</default>
+        </entry>
+        <entry name="criticalThreshold" type="Int">
+            <label>Critical threshold percentage</label>
+            <default>80</default>
+        </entry>
+        <entry name="compactStyle" type="String">
+            <label>Compact representation style</label>
+            <default>text</default>
+        </entry>
+        <entry name="compactMetric" type="String">
+            <label>Metric shown in gauge mode</label>
+            <default>five_hour</default>
+        </entry>
+        <entry name="gaugeInnerMetric" type="String">
+            <label>Metric shown in the gauge's inner ring</label>
+            <default>model_weekly</default>
+        </entry>
+        <entry name="gaugeLabel" type="String">
+            <label>Label shown inside gauge</label>
+            <default>time</default>
+        </entry>
+        <entry name="showPace" type="Bool">
+            <label>Show pace segments and marker on the popup bars</label>
+            <default>false</default>
+        </entry>
+        <entry name="normalColorLight" type="String">
+            <label>Normal usage bar color on a light panel/popup</label>
+            <!-- A tinted colour so the bar stays visible on a light background,
+                 where the dark-panel choice (white) would disappear. -->
+            <default>#D77757</default>
+        </entry>
+        <entry name="normalColorDark" type="String">
+            <label>Normal usage bar color on a dark panel/popup</label>
+            <default>#ffffff</default>
+        </entry>
+        <entry name="warningColor" type="String">
+            <label>Warning usage bar color</label>
+            <default>#E5C07B</default>
+        </entry>
+        <entry name="textColorMode" type="String">
+            <label>How the percentage-only panel text is colored: usage, theme or custom</label>
+            <default>usage</default>
+        </entry>
+        <entry name="textColorLight" type="String">
+            <label>Panel text color on a light panel (custom mode)</label>
+            <default>#232629</default>
+        </entry>
+        <entry name="textColorDark" type="String">
+            <label>Panel text color on a dark panel (custom mode)</label>
+            <default>#fcfcfc</default>
+        </entry>
+        <entry name="autoRefreshToken" type="Bool">
+            <label>Refresh an expired OAuth token instead of showing an error</label>
+            <default>true</default>
+        </entry>
+        <entry name="showCostTab" type="Bool">
+            <label>Show the Cost tab and keep its cache of the session logs</label>
+            <default>true</default>
+        </entry>
+        <entry name="showPeakClock" type="Bool">
+            <label>Show the peak hours clock on the Limits tab</label>
+            <default>true</default>
+        </entry>
+        <entry name="hiddenLimits" type="String">
+            <label>Comma-separated keys of the limits hidden in the popup</label>
+            <default></default>
+        </entry>
+        <entry name="knownWeeklyLimits" type="String">
+            <label>Scoped weekly limits seen in the last reply, as JSON [{key, name}]; written by the widget for the settings page</label>
+            <default>[]</default>
+        </entry>
+        <entry name="costStartPeriod" type="String">
+            <label>Period the Cost tab opens on: today or last</label>
+            <default>today</default>
+        </entry>
+        <entry name="lastCostPeriod" type="String">
+            <label>The Cost tab's last picked period</label>
+            <default>today</default>
+        </entry>
+        <entry name="claudeFolder" type="String">
+            <label>Path to Claude config folder (optional)</label>
+            <default></default>
+        </entry>
+    </group>
+</kcfg>
