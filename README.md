@@ -40,6 +40,10 @@ Based on [Claude Meter](https://github.com/p3kj/plasma-applet-claudemeter) by p3
 
 ## Install
 
+From a release: download `claude-widget-kde-<version>.plasmoid` from [Releases](https://github.com/Tokra110/claude-widget-kde/releases), then run `kpackagetool6 -t Plasma/Applet -i claude-widget-kde-<version>.plasmoid` (or use **Add Widgets... > Get New > Install Widget From Local File**).
+
+From source:
+
 ```sh
 git clone https://github.com/Tokra110/claude-widget-kde.git
 cd claude-widget-kde
